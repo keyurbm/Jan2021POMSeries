@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Demo Cart App Test automtion regression suite" duration-ms="29488" started-at="2021-04-20T18:24:24Z" finished-at="2021-04-20T18:24:54Z">
+  <suite name="Demo Cart App Test automtion regression suite" duration-ms="50716" started-at="2021-05-19T18:39:03Z" finished-at="2021-05-19T18:39:54Z">
     <groups>
     </groups>
-    <test name="Login page Test" duration-ms="29488" started-at="2021-04-20T18:24:24Z" finished-at="2021-04-20T18:24:54Z">
+    <test name="Login page Test" duration-ms="50716" started-at="2021-05-19T18:39:03Z" finished-at="2021-05-19T18:39:54Z">
       <class name="com.qa.opencart.tests.LoginPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.opencart.tests.LoginPageTest@38548b19]" name="setUp" is-config="true" duration-ms="9977" started-at="2021-04-20T18:24:24Z" finished-at="2021-04-20T18:24:34Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.opencart.tests.LoginPageTest@4e8e8621]" name="setUp" is-config="true" duration-ms="12081" started-at="2021-05-19T18:39:03Z" finished-at="2021-05-19T18:39:15Z">
           <params>
             <param index="0">
               <value>
@@ -18,23 +18,71 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="loginPageTitleTest()[pri:1, instance:com.qa.opencart.tests.LoginPageTest@38548b19]" name="loginPageTitleTest" duration-ms="5909" started-at="2021-04-20T18:24:35Z" finished-at="2021-04-20T18:24:41Z">
+        <test-method status="PASS" signature="loginNegativeTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.opencart.tests.LoginPageTest@4e8e8621]" name="loginNegativeTest" duration-ms="8396" started-at="2021-05-19T18:39:15Z" data-provider="loginNegativeData" finished-at="2021-05-19T18:39:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNegativeTest -->
+        <test-method status="PASS" signature="loginNegativeTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.opencart.tests.LoginPageTest@4e8e8621]" name="loginNegativeTest" duration-ms="7300" started-at="2021-05-19T18:39:24Z" data-provider="loginNegativeData" finished-at="2021-05-19T18:39:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNegativeTest -->
+        <test-method status="PASS" signature="loginNegativeTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.opencart.tests.LoginPageTest@4e8e8621]" name="loginNegativeTest" duration-ms="7121" started-at="2021-05-19T18:39:32Z" data-provider="loginNegativeData" finished-at="2021-05-19T18:39:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNegativeTest -->
+        <test-method status="FAIL" signature="loginPageTitleTest()[pri:1, instance:com.qa.opencart.tests.LoginPageTest@4e8e8621]" name="loginPageTitleTest" duration-ms="5230" started-at="2021-05-19T18:39:39Z" finished-at="2021-05-19T18:39:44Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for title to be "Account Login11". Current title: "Account Login" (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'NIVIDOUSKEYUR', ip: '192.168.29.97', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_25'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\keyur_2\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57091}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 351889ff4053b0c20ad1727575b726cc]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\keyur_2\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63278}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d0c16104dd6b9d2e00bb173e76d64158]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be "Account Login11". Current title: "Account Login" (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'NIVIDOUSKEYUR', ip: '192.168.29.97', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_25'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\keyur_2\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57091}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 351889ff4053b0c20ad1727575b726cc
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\keyur_2\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63278}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d0c16104dd6b9d2e00bb173e76d64158
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at com.qa.opencart.utils.ElementUtil.waitForTitle(ElementUtil.java:170)
@@ -66,19 +114,19 @@ at java.lang.Thread.run(Thread.java:745)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="loginPageUrlTest()[pri:2, instance:com.qa.opencart.tests.LoginPageTest@38548b19]" name="loginPageUrlTest" duration-ms="56" started-at="2021-04-20T18:24:43Z" finished-at="2021-04-20T18:24:43Z">
+        <test-method status="PASS" signature="loginPageUrlTest()[pri:2, instance:com.qa.opencart.tests.LoginPageTest@4e8e8621]" name="loginPageUrlTest" duration-ms="29" started-at="2021-05-19T18:39:45Z" finished-at="2021-05-19T18:39:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageUrlTest -->
-        <test-method status="PASS" signature="forgotPwdLinkTest()[pri:3, instance:com.qa.opencart.tests.LoginPageTest@38548b19]" name="forgotPwdLinkTest" duration-ms="2112" started-at="2021-04-20T18:24:43Z" finished-at="2021-04-20T18:24:45Z">
+        <test-method status="PASS" signature="forgotPwdLinkTest()[pri:3, instance:com.qa.opencart.tests.LoginPageTest@4e8e8621]" name="forgotPwdLinkTest" duration-ms="1535" started-at="2021-05-19T18:39:45Z" finished-at="2021-05-19T18:39:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotPwdLinkTest -->
-        <test-method status="PASS" signature="loginTest()[pri:4, instance:com.qa.opencart.tests.LoginPageTest@38548b19]" name="loginTest" duration-ms="7528" started-at="2021-04-20T18:24:45Z" finished-at="2021-04-20T18:24:53Z">
+        <test-method status="PASS" signature="loginTest()[pri:4, instance:com.qa.opencart.tests.LoginPageTest@4e8e8621]" name="loginTest" duration-ms="6401" started-at="2021-05-19T18:39:46Z" finished-at="2021-05-19T18:39:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@38548b19]" name="tearDown" is-config="true" duration-ms="1247" started-at="2021-04-20T18:24:53Z" finished-at="2021-04-20T18:24:54Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@4e8e8621]" name="tearDown" is-config="true" duration-ms="937" started-at="2021-05-19T18:39:53Z" finished-at="2021-05-19T18:39:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

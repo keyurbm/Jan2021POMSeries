@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -117,6 +117,21 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Demo_Cart_App_Test_automtion_regression_suite" title="com.qa.opencart.tests.LoginPageTest" hash-for-method="forgotPwdLinkTest">forgotPwdLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Demo_Cart_App_Test_automtion_regression_suite" title="com.qa.opencart.tests.LoginPageTest" hash-for-method="loginNegativeTest( ,  )">loginNegativeTest( ,  )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Demo_Cart_App_Test_automtion_regression_suite" title="com.qa.opencart.tests.LoginPageTest" hash-for-method="loginNegativeTest(test@gmail.com, test@123)">loginNegativeTest(test@gmail.com, test@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Demo_Cart_App_Test_automtion_regression_suite" title="com.qa.opencart.tests.LoginPageTest" hash-for-method="loginNegativeTest( , test@123)">loginNegativeTest( , test@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -156,8 +171,8 @@
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;NIVIDOUSKEYUR&apos;, ip: &apos;192.168.29.97&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\keyur_2\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57091}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 351889ff4053b0c20ad1727575b726cc
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\keyur_2\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63278}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d0c16104dd6b9d2e00bb173e76d64158
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at com.qa.opencart.utils.ElementUtil.waitForTitle(ElementUtil.java:170)
@@ -200,6 +215,30 @@ Session ID: 351889ff4053b0c20ad1727575b726cc
                   <a name="forgotPwdLinkTest">
                   </a> <!-- forgotPwdLinkTest -->
                   <span class="method-name">forgotPwdLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginNegativeTest( ,  )">
+                  </a> <!-- loginNegativeTest( ,  ) -->
+                  <span class="method-name">loginNegativeTest</span>
+                  <span class="parameters">( ,  )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginNegativeTest(test@gmail.com, test@123)">
+                  </a> <!-- loginNegativeTest(test@gmail.com, test@123) -->
+                  <span class="method-name">loginNegativeTest</span>
+                  <span class="parameters">(test@gmail.com, test@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginNegativeTest( , test@123)">
+                  </a> <!-- loginNegativeTest( , test@123) -->
+                  <span class="method-name">loginNegativeTest</span>
+                  <span class="parameters">( , test@123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -275,28 +314,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
+data.setCell(0, 1, 'loginNegativeTest')
 data.setCell(0, 2, 'com.qa.opencart.tests.LoginPageTest')
-data.setCell(0, 3, 7528);
+data.setCell(0, 3, 8396);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginPageTitleTest')
+data.setCell(1, 1, 'loginNegativeTest')
 data.setCell(1, 2, 'com.qa.opencart.tests.LoginPageTest')
-data.setCell(1, 3, 5909);
+data.setCell(1, 3, 7300);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'forgotPwdLinkTest')
+data.setCell(2, 1, 'loginNegativeTest')
 data.setCell(2, 2, 'com.qa.opencart.tests.LoginPageTest')
-data.setCell(2, 3, 2112);
+data.setCell(2, 3, 7121);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginPageUrlTest')
+data.setCell(3, 1, 'loginTest')
 data.setCell(3, 2, 'com.qa.opencart.tests.LoginPageTest')
-data.setCell(3, 3, 56);
+data.setCell(3, 3, 6401);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginPageTitleTest')
+data.setCell(4, 2, 'com.qa.opencart.tests.LoginPageTest')
+data.setCell(4, 3, 5230);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'forgotPwdLinkTest')
+data.setCell(5, 2, 'com.qa.opencart.tests.LoginPageTest')
+data.setCell(5, 3, 1535);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginPageUrlTest')
+data.setCell(6, 2, 'com.qa.opencart.tests.LoginPageTest')
+data.setCell(6, 3, 29);
 window.suiteTableData['Demo_Cart_App_Test_automtion_regression_suite']= { tableData: data, tableDiv: 'times-div-Demo_Cart_App_Test_automtion_regression_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-Demo_Cart_App_Test_automtion_regression_suite">
               </div> <!-- times-div-Demo_Cart_App_Test_automtion_regression_suite -->
             </div> <!-- times-div -->
@@ -328,26 +379,38 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <span class="method-name">loginNegativeTest(test@gmail.com, test@123)</span>
+                <span class="method-start">12270 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginNegativeTest( , test@123)</span>
+                <span class="method-start">21233 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginNegativeTest( ,  )</span>
+                <span class="method-start">28562 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">10364 ms</span>
+                <span class="method-start">35749 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginPageUrlTest</span>
-                <span class="method-start">18471 ms</span>
+                <span class="method-start">41719 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">forgotPwdLinkTest</span>
-                <span class="method-start">18540 ms</span>
+                <span class="method-start">41770 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">20660 ms</span>
+                <span class="method-start">43312 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28196 ms</span>
+                <span class="method-start">49721 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
